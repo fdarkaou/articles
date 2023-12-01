@@ -165,7 +165,7 @@ async function generateArticles(title, languague) {
     console.log("== Chat Completions Sample ==");
   
     const client = new OpenAIClient(endpoint, new AzureKeyCredential(azureApiKey));
-    const deploymentId = "WorkoutPro";
+    const deploymentId = "YOUR AZURE DEPLOYMENT ID GOES HERE";
     const result = await client.getChatCompletions(deploymentId, messages, functions);
   
     let responseData;
